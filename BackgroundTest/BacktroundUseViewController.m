@@ -21,59 +21,31 @@
 {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
-    
-    [self addButton];
-    [self addCloseButton];
 }
 
 
 - (void)dealloc
 {
-    NSLog(@"dealloc call");
+    NSLog(@"call dealloc");
 }
 
 
-- (void)addButton
-{
-    UIButton *sButton = [UIButton new];
-    
-    [sButton setFrame:CGRectMake(200, 300, 50, 50)];
-    [sButton setTitle:@"시작" forState:UIControlStateNormal];
-    [sButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [sButton addTarget:self action:@selector(tappedButton:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:sButton];
-}
+#pragma mark - Action
 
 
-- (void)addCloseButton
-{
-    UIButton *sButton = [UIButton new];
-    
-    [sButton setFrame:CGRectMake(300, 100, 50, 50)];
-    [sButton setTitle:@"닫기" forState:UIControlStateNormal];
-    [sButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [sButton addTarget:self action:@selector(tappedCloseButton:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:sButton];
-}
-
-
-- (void)tappedCloseButton:(id)aSender
+- (IBAction)tappedCloseButton:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
-- (void)tappedButton:(id)aSender
+- (IBAction)tappedTimerButton:(id)sender
 {
     __block UIBackgroundTaskIdentifier taskId = UIBackgroundTaskInvalid;
-    
     __block NSTimer *sTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
     
     taskId = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
-        
-        NSLog(@"timer call, remainingtime %lf", [[UIApplication sharedApplication] backgroundTimeRemaining]);
+        NSLog(@"call expiration handler");
         
         [[UIApplication sharedApplication] endBackgroundTask:taskId];
         taskId = UIBackgroundTaskInvalid;
@@ -86,8 +58,6 @@
 
 - (void)timerAction:(id)aSender
 {
-    NSTimeInterval sRemainingTime = [[UIApplication sharedApplication] backgroundTimeRemaining];
-
     NSLog(@"timer call, remainingtime %lf", [[UIApplication sharedApplication] backgroundTimeRemaining]);
 }
 
