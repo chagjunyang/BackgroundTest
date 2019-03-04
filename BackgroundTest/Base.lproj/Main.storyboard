@@ -69,7 +69,7 @@
                                     <action selector="tappedDownloadButton:" destination="iIT-fT-gzV" eventType="touchUpInside" id="Fcl-0a-Tky"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSm-Ly-rOt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSm-Ly-rOt" customClass="CustomImageView">
                                 <rect key="frame" x="20" y="152" width="335" height="495"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SeT-4W-egd">

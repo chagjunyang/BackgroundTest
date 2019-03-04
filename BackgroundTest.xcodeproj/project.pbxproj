@@ -16,6 +16,7 @@
 		2D866AEA2226665F0078CB01 /* BackgroundTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D866AE92226665F0078CB01 /* BackgroundTestTests.m */; };
 		2D866AF52226665F0078CB01 /* BackgroundTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D866AF42226665F0078CB01 /* BackgroundTestUITests.m */; };
 		2D866B04222666960078CB01 /* BacktroundUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D866B03222666960078CB01 /* BacktroundUseViewController.m */; };
+		2DBF0A2F2227DE5100C22E1F /* CustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF0A2E2227DE5100C22E1F /* CustomImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		2D866AF62226665F0078CB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D866B02222666960078CB01 /* BacktroundUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BacktroundUseViewController.h; sourceTree = "<group>"; };
 		2D866B03222666960078CB01 /* BacktroundUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BacktroundUseViewController.m; sourceTree = "<group>"; };
+		2DBF0A2D2227DE5100C22E1F /* CustomImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomImageView.h; sourceTree = "<group>"; };
+		2DBF0A2E2227DE5100C22E1F /* CustomImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				2D866AD12226665D0078CB01 /* AppDelegate.m */,
 				2D866AD32226665D0078CB01 /* ViewController.h */,
 				2D866AD42226665D0078CB01 /* ViewController.m */,
+				2DBF0A2D2227DE5100C22E1F /* CustomImageView.h */,
+				2DBF0A2E2227DE5100C22E1F /* CustomImageView.m */,
 				2D866B02222666960078CB01 /* BacktroundUseViewController.h */,
 				2D866B03222666960078CB01 /* BacktroundUseViewController.m */,
 				2D866AD62226665D0078CB01 /* Main.storyboard */,
@@ -267,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DBF0A2F2227DE5100C22E1F /* CustomImageView.m in Sources */,
 				2D866AD52226665D0078CB01 /* ViewController.m in Sources */,
 				2D866B04222666960078CB01 /* BacktroundUseViewController.m in Sources */,
 				2D866AE02226665F0078CB01 /* main.m in Sources */,
